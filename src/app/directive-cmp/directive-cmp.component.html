@@ -1,0 +1,38 @@
+<div class="cmp-container">
+    <p>directive-cmp works!</p>
+
+    <div *ngIf="flag">{{ userName }}</div>
+    <div *ngIf="flag, else myBlock">
+        <h2>{{ userName }}</h2>
+    </div>
+    <ng-template #myBlock>
+        <h2>Guest</h2>
+    </ng-template>
+    <div>
+        Months:-
+        <select>
+            <option *ngFor="let month of months">{{month}}</option>
+        </select>
+    </div>
+    <div style="border: 1px solid black;">
+        Even odd using ngIf
+        <div *ngFor="let num of numbers">
+            <p *ngIf="num%2==0, else oddNumPara">{{num}} is even</p>
+
+            <ng-template #oddNumPara>
+                <p>{{num}} is odd</p>
+            </ng-template>
+        </div>
+    </div>
+
+    <div style="border: 1px solid red">
+        Even odd using ngSwitch
+        <div *ngFor="let num of numbers">
+            <div ngSwitch="{{num%2}}">
+                <div *ngSwitchCase="'0'">{{num}} is even</div>
+                <div *ngSwitchCase="'1'">{{num}} is odd</div>
+                <div *ngSwitchDefault>{{num}} is Nothing</div>
+            </div>
+        </div>
+    </div>
+</div>

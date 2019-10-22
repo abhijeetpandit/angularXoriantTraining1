@@ -11,6 +11,7 @@ import { PropertyCmpComponent } from './property-cmp/property-cmp.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwowayCmpComponent } from './twoway-cmp/twoway-cmp.component';
 import { ExerciseOneComponent } from './exercise-one/exercise-one.component';
+import { DirectiveCmpComponent } from './directive-cmp/directive-cmp.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ExerciseOneComponent } from './exercise-one/exercise-one.component';
     PropertyCmpComponent,
     EventBindingComponent,
     TwowayCmpComponent,
-    ExerciseOneComponent
+    ExerciseOneComponent,
+    DirectiveCmpComponent
   ],
   imports: [
     BrowserModule,
