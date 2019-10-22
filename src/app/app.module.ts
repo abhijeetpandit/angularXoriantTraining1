@@ -12,6 +12,10 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwowayCmpComponent } from './twoway-cmp/twoway-cmp.component';
 import { ExerciseOneComponent } from './exercise-one/exercise-one.component';
 import { DirectiveCmpComponent } from './directive-cmp/directive-cmp.component';
+import { MyDirectiveDirective } from './my-directive.directive';
+import { MyDirectiveTwoDirective } from './my-directive-two.directive';
+import { PipeComponentComponent } from './pipe-component/pipe-component.component';
+import { CustomPipePipe } from './custom-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { DirectiveCmpComponent } from './directive-cmp/directive-cmp.component';
     EventBindingComponent,
     TwowayCmpComponent,
     ExerciseOneComponent,
-    DirectiveCmpComponent
+    DirectiveCmpComponent,
+    MyDirectiveDirective,
+    MyDirectiveTwoDirective,
+    PipeComponentComponent,
+    CustomPipePipe
   ],
   imports: [
     BrowserModule,

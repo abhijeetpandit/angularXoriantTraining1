@@ -1,0 +1,13 @@
+<div class="cmp-container">
+    <p>pipe-component works!</p>
+    <p>Uppercase : {{title | uppercase}}</p>
+    <p>Lowercase : {{title | lowercase}}</p>
+    <p>Currency : {{45.453 | currency:"USD"}}</p>
+    <p>Date : {{today | date:'d/M/y'}}</p>
+    <p>Date : {{today | date:'shortTime'}}</p>
+    <p>number : {{458.454845215 | number: '3.4-4'}}</p>
+    <p>json : {{jsonVal | json}}</p>
+    <p>percent : {{0.85 | percent}}</p>
+    <p>Months : {{months | slice:2:6}}</p>
+    <p>Custom pipe (square of a no - 5): {{5 | customPipe}}</p>
+</div>
