@@ -16,6 +16,10 @@ import { MyDirectiveDirective } from './my-directive.directive';
 import { MyDirectiveTwoDirective } from './my-directive-two.directive';
 import { PipeComponentComponent } from './pipe-component/pipe-component.component';
 import { CustomPipePipe } from './custom-pipe.pipe';
+import { ParentCmp1Component } from './parent-cmp1/parent-cmp1.component';
+import { ChildCmp1Component } from './child-cmp1/child-cmp1.component';
+import { AssignmentParentCmp1Component } from './assignment-parent-cmp1/assignment-parent-cmp1.component';
+import { AssignmentChildCmp1Component } from './assignment-child-cmp1/assignment-child-cmp1.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { CustomPipePipe } from './custom-pipe.pipe';
     MyDirectiveDirective,
     MyDirectiveTwoDirective,
     PipeComponentComponent,
-    CustomPipePipe
+    CustomPipePipe,
+    ParentCmp1Component,
+    ChildCmp1Component,
+    AssignmentParentCmp1Component,
+    AssignmentChildCmp1Component
   ],
   imports: [
     BrowserModule,
