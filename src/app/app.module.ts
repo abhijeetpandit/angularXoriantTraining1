@@ -22,6 +22,8 @@ import { AssignmentParentCmp1Component } from './assignment-parent-cmp1/assignme
 import { AssignmentChildCmp1Component } from './assignment-child-cmp1/assignment-child-cmp1.component';
 import { ParentCmp2Component } from './parent-cmp2/parent-cmp2.component';
 import { ChildCmp2Component } from './child-cmp2/child-cmp2.component';
+import { EmpDetailsCmpComponent } from './emp-details-cmp/emp-details-cmp.component';
+import { EmpListComponent } from './emp-list/emp-list.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ChildCmp2Component } from './child-cmp2/child-cmp2.component';
     AssignmentParentCmp1Component,
     AssignmentChildCmp1Component,
     ParentCmp2Component,
-    ChildCmp2Component
+    ChildCmp2Component,
+    EmpDetailsCmpComponent,
+    EmpListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<div class="cmp-container">
+<p>emp-details-cmp works!</p>
+JSON:-
+<div *ngFor="let emp of employees">
+    {{emp | json}}
+</div>
+Values:-
+
+<div *ngFor="let emp of employees">
+    {{ emp.id }} - {{ emp.name }} - {{ emp.age }}
+</div>
+</div>
