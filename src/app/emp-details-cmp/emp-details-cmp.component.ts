@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeServiceService } from '../employee-service.service';
+import { EmpServiceHttpService } from '../emp-service-http.service';
 
 @Component({
   selector: 'app-emp-details-cmp',
@@ -10,10 +11,14 @@ export class EmpDetailsCmpComponent implements OnInit {
 
 
   employees = [];
-  constructor(private empService: EmployeeServiceService) { }
+  public employeesFromService = [];
+  constructor(private empService: EmployeeServiceService, private empHttpService: EmpServiceHttpService) { }
 
   ngOnInit() {
     this.employees = this.empService.getEmployees();
+    this.empHttpService.getEmployees().subscribe(
+      data => this.employeesFromService = data
+    );
   }
 
 }

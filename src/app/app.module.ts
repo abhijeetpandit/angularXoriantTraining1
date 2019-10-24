@@ -24,6 +24,8 @@ import { ParentCmp2Component } from './parent-cmp2/parent-cmp2.component';
 import { ChildCmp2Component } from './child-cmp2/child-cmp2.component';
 import { EmpDetailsCmpComponent } from './emp-details-cmp/emp-details-cmp.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmpDetailsHttpComponent } from './emp-details-http/emp-details-http.component';
 
 @NgModule({
   declarations: [
@@ -47,12 +49,14 @@ import { EmpListComponent } from './emp-list/emp-list.component';
     ParentCmp2Component,
     ChildCmp2Component,
     EmpDetailsCmpComponent,
-    EmpListComponent
+    EmpListComponent,
+    EmpDetailsHttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
