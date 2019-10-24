@@ -1,0 +1,22 @@
+<div class="cmp-container">
+<p>reactive-form-cmp works!</p>
+<form [formGroup]="loginForm">
+    <div>
+        <label>UserName: </label>
+        <input type="text" formControlName="uname">
+        <span *ngIf="uname.invalid && uname.touched">
+            username is invalid
+        </span>
+    </div>
+    <div>
+        <label>Password: </label>
+        <input type="password" formControlName="password">
+        <span *ngIf="password.invalid && password.touched">
+            password is invalid
+        </span>
+    </div>
+    <button type="submit" (click)="display()" [disabled]="loginForm.invalid">Login</button>
+</form>
+form invalid : {{loginForm.invalid}}
+username: {{uname.value}} password: {{password.value}}
+</div>

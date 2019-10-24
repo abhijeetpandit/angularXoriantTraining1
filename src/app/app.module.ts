@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +26,8 @@ import { EmpDetailsCmpComponent } from './emp-details-cmp/emp-details-cmp.compon
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmpDetailsHttpComponent } from './emp-details-http/emp-details-http.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormCmpComponent } from './reactive-form-cmp/reactive-form-cmp.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +52,16 @@ import { EmpDetailsHttpComponent } from './emp-details-http/emp-details-http.com
     ChildCmp2Component,
     EmpDetailsCmpComponent,
     EmpListComponent,
-    EmpDetailsHttpComponent
+    EmpDetailsHttpComponent,
+    TemplateDrivenFormComponent,
+    ReactiveFormCmpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
