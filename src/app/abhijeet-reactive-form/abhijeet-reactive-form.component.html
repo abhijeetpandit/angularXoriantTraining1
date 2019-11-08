@@ -1,0 +1,25 @@
+<div class="cmp-container">
+    <p>abhijeet-reactive-form works!</p>
+    Reactive form by Abhijeet
+
+    <form [formGroup]="loginForm">
+        <div class="form-input">
+            <label for="username">Username: </label>
+            <input type="text" name="username" class="mandatory" formControlName="uname">
+            <span *ngIf="uname.touched && uname.invalid" class="tooltip-text">User name is invalid</span>
+        </div>
+
+
+        <div class="form-input">
+            <label for="password">Password: </label>
+            <input type="password" name="password" class="mandatory" formControlName="pwd">
+            <span *ngIf="pwd.touched && pwd.invalid" class="tooltip-text">Password is invalid (min 8 max 12 chars)</span>
+        </div>
+        
+        <div class="form-input">
+            <input type="submit" name="submit" value="Login" (click)="login()" [disabled]="!loginForm.valid">
+        </div>
+    </form>
+
+    uname:{{ uname.value  }} |  password:{{ pwd.value}} | valid:  {{loginForm.valid}}
+</div>
