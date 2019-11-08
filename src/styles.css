@@ -1,3 +1,6 @@
+:root {
+    --tooltip-background-color: #ff0000;
+}
 .cmp-container {
     background-color: #cdffdc;
 }

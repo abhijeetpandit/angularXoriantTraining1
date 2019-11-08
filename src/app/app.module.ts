@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmpDetailsHttpComponent } from './emp-details-http/emp-details-http.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormCmpComponent } from './reactive-form-cmp/reactive-form-cmp.component';
+import { AbhijeetTemplateDrivenFormComponent } from './abhijeet-template-driven-form/abhijeet-template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { ReactiveFormCmpComponent } from './reactive-form-cmp/reactive-form-cmp.
     EmpListComponent,
     EmpDetailsHttpComponent,
     TemplateDrivenFormComponent,
-    ReactiveFormCmpComponent
+    ReactiveFormCmpComponent,
+    AbhijeetTemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
